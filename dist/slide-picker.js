@@ -62,16 +62,3 @@ $(document).ready(function() {
 });
 </script>
 
-<!-- SECOND PART -->
-<!-- Checks for hash in the url and taps an element with the same ID/class -->
-<script>
-$(document).ready(function() {
-if(window.location.hash) {
-      var urlVariable = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
-      // hash found
-      $('#' + urlVariable).trigger('tap') // you can change "'#'" with '.' if you want to use combo classes
-  } else {
-      // No hash found
-  }
-})
-</script>
